@@ -4,7 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>    
+    <body>
+        
+    <script>
+function find()
+  {
+ var sum=0;
+    var no=parseInt(frm.txt1.value);
+    while(no>0)
+     {
+       sum=sum+no%10;
+       no=Math.floor(no/10);
+      }
+    alert("Soucet cifer je:  "+sum);
+         
+   }
+    </script>
+    
+    
+    
         <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
 .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
@@ -165,5 +183,11 @@
   </tr>
 </tbody>
 </table>
+<form name="frm">
+Enter a Number:<input name="txt1" type="text" />
+<input name="b1" onclick="find();" type="button" value="display" /></form>
+
+    
+    
     </body>
 </html>
